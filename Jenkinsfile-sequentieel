@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('pull') {
       steps {
-        git credentialsId: '5c710199-9c7f-4288-87b1-baf778e222b3', url: 'https://github.com/Tavessem/cypa.git'
+        git credentialsId: 'f1ced0fa-99b4-40db-96b0-6fbce9675d5e', url: 'https://github.com/testerthomas09/poc-cypa.git'
       }
     }
     stage('build') {
