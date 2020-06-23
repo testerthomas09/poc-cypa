@@ -1,1 +1,1 @@
-# poc-cypa
+# cypress-parallel

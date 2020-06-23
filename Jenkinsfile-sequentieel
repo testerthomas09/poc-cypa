@@ -1,0 +1,26 @@
+pipeline {
+  agent {
+    docker {
+      image 'cypress/base:10'
+    }
+  }
+
+  stages {
+    stage('pull') {
+      steps {
+        git credentialsId: '5c710199-9c7f-4288-87b1-baf778e222b3', url: 'https://github.com/Tavessem/cypa.git'
+      }
+    }
+    stage('build') {
+      steps {
+        sh 'npm install'
+      }
+    }
+
+    stage('cypress sequential tests') {
+      steps {
+        sh 'npm run test-s'
+      }
+    }
+  }
+}
