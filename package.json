@@ -1,8 +1,8 @@
 {
   "scripts": {
     "cy:open": "cypress open",
-    "test-s": "cypress run --headless --record --key 79f13211-63b0-4778-b3ba-2829c563315f",
-    "test-p": "cypress run --headless --parallel --record --key 79f13211-63b0-4778-b3ba-2829c563315f",
+    "test-s": "cypress run --headless --record --key 674999c2-f1d4-4d7e-be44-3f9be3a23c11",
+    "test-p": "cypress run --headless --parallel --record --key 674999c2-f1d4-4d7e-be44-3f9be3a23c11",
     "download-jenkins": "docker pull jenkinsci/blueocean:latest",
     "start-jenkins-new": "docker run -u root -d --name blue-ocean -p 8080:8080 -v jenkins-data:/var/jencd ..kins_home -v npm-cache:/root/.npm -v cypress-cache:/root/.cache jenkinsci/blueocean:latest",
     "start-jenkins": "docker run -u root -d --name blue-ocean -p 8080:8080 -v jenkins-data:/var/jencd ..kins_home -v npm-cache:/root/.npm -v cypress-cache:/root/.cache -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean:latest"
